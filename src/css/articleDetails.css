@@ -1,0 +1,217 @@
+.articleDetailsOuterBox {
+  width: 838px !important;
+
+  height: 745px;
+  /* background-color: red; */
+  margin-left: 2%;
+  box-sizing: border-box;
+  overflow: hidden; /* 将超出盒子内容隐藏 */
+  overflow: scroll; /* 允许内容滚动 */
+  /* 禁止左右滚动 */
+  overflow-x: hidden;
+  border-radius: 5px;
+}
+.articleDetailsOuterBox::-webkit-scrollbar {
+  width: 0; /* 隐藏滚动条的宽度 */
+  height: 0; /* 隐藏滚动条的高度 */
+}
+.articleContent {
+  background-color: #fff;
+}
+/* 输出 */
+.output {
+  display: flex;
+  flex-direction: column; /* 垂直排布内容 */
+}
+/* 文章信息：标题、发布人、发布时间、浏览量 */
+.articleContent_articleInformation {
+  padding-top: 2%;
+  margin-left: 4%;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+.articleData {
+  display: flex;
+}
+.articleData p {
+  margin-right: 20px;
+  font-size: 10px;
+  color: gray;
+}
+/* 内容 */
+.articleContent_content {
+  padding-top: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.articleContent_content_text {
+  /* 保留文章原始样貌输出 */
+  white-space: pre-line;
+  /*   text-indent: 2em; */
+  /* text-indent: 2em; */
+  /* 设置行间距为1.5倍的文字大小 */
+  line-height: 1.5;
+}
+.likeAndStep {
+  margin-left: auto;
+  /* 不允许复制 */
+  -webkit-user-select: none; /* Safari/Chrome */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  user-select: none; /* 其他浏览器 */
+  display: flex;
+  align-items: center;
+}
+/* 图标 */
+/* .icon_box {
+} */
+.icon_box:hover {
+  cursor: pointer;
+}
+
+.icon_like {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  margin-right: 10px;
+}
+.color {
+  color: red;
+}
+/* 默认颜色 */
+.defaultColor {
+  color: black;
+}
+.dividingLine {
+  width: 100%;
+  border: rgb(101, 95, 95) 1px solid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* 文章评论 */
+.articleComments {
+  width: 100%;
+  /* background-color: red; */
+}
+.avatarImg {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+}
+/* 头 */
+.comments_text {
+  font-size: 30px !important;
+  font-weight: bold;
+  color: black;
+  margin-left: 4%;
+  display: flex;
+  align-items: center;
+}
+.myComment {
+  width: 100%;
+  /* background-color: green; */
+}
+/* 发表评论 */
+.leaveAComment {
+  margin-left: 4%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* background-color: blue; */
+}
+.myCommentText_box {
+  /* margin-top: 5%; */
+  /* background-color: red; */
+  margin-left: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 8%;
+}
+.myCommentText_box_button {
+  width: 50px;
+  color: black;
+  background-color: rgb(116, 185, 241);
+  border: none; /* 隐藏按钮边框 */
+  border-radius: 2px;
+  outline: none; /* 隐藏按钮边框 */
+  margin: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+/* 输出评论内容 */
+.outputTheCommentContent {
+  margin-top: 30px;
+  /* background-color: red; */
+  /* margin-bottom: 30px; */
+}
+.borderShadow {
+  /* background-color: red; */
+  /* 添加四周阴影效果 */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);  */
+  /* margin-left: 4%; */
+  margin-right: 4%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* 添加下方阴影效果 */
+}
+.avatarNickname {
+  /* background-color: blue; */
+  margin-left: 4% !important;
+  padding-top: 15px !important;
+}
+/* 头像、昵称 */
+.avatarNickname {
+  display: flex;
+  align-items: center;
+}
+.Nickname {
+  color: black;
+  font-size: 20px !important;
+  margin-left: 10px !important;
+}
+/* 评论内容、评论时间 */
+.contentTime {
+  margin-left: 11%;
+  /* background-color: red; */
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+.contentTime_content {
+  color: black;
+  font-size: 16px;
+}
+.contentTime_time {
+  color: gray;
+  font-size: 10px;
+}
+.moreComments {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  background-color: grey;
+  /* margin-left: 4%; */
+  /* margin-right: 4%; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moreComments_text {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.avatarImg_pinglun {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.askNum {
+  margin-left: 10px;
+  font-size: 20px;
+}

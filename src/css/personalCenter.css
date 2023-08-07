@@ -1,0 +1,163 @@
+/* 最外层盒子 */
+.father_box {
+  width: 100%;
+  height: 100vh;
+  /* background-color: blue; */
+  /* 内容水平居中 */
+  display: flex;
+  justify-content: center;
+}
+/* 固定显示的窗口 */
+.personalCenterBox {
+  width: 900px !important;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 745px;
+  /* background-color: red; */
+  margin-left: 2%;
+  box-sizing: border-box;
+  overflow: hidden; /* 将超出盒子内容隐藏 */
+  overflow: scroll; /* 允许内容滚动 */
+}
+.personalCenterBox::-webkit-scrollbar {
+  width: 0; /* 隐藏滚动条的宽度 */
+  height: 0; /* 隐藏滚动条的高度 */
+}
+/* 分割线 */
+.dividingLine {
+  width: 100%;
+  height: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* 添加下方阴影效果 */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* 头像 */
+
+.avatarImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.personalCenter_ScrollingBox_upperPortion_box {
+  /* background-color: blue; */
+  margin: 4%;
+}
+.personalCenter_ScrollingBox_upperPortion {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+.nicknameLiked {
+  margin-left: 30px;
+}
+.nicknameLiked_nickname {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+  /* 加大字间距 */
+  letter-spacing: 10px;
+}
+.button {
+  margin-left: auto;
+  width: 140px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  background-color: #e16559;
+  border-radius: 10px;
+}
+/* 个人中心我的发布 */
+/* 列表项 */
+.listItems {
+  border-radius: 5px;
+  background-color: #ffffff;
+  height: 180px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* 添加下方阴影效果 */
+}
+/* 文章标题  */
+.articleTitle:hover {
+  cursor: pointer;
+}
+.articleTitle p {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  /* background-color: green; */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 10em;
+
+  margin-left: 4%;
+  padding-top: 1%;
+}
+.myPosting {
+  font-size: 30px;
+  color: black;
+  margin: 2% 0px 2% 4%;
+  font-weight: bold;
+}
+/* 文章信息 */
+.articleInformation {
+  display: flex;
+}
+.articleInformation p {
+  color: gray;
+  margin-left: 4%;
+  font-size: 10px;
+}
+/* 文章内容 content */
+.articleContent {
+  margin-top: 10px;
+  /* background-color: red; */
+  width: 100%;
+  box-sizing: border-box;
+}
+.articleContent p {
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 45px;
+
+  text-indent: 2em;
+  overflow: hidden;
+}
+/* 显示更多内容 */
+.moreComments {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(161, 203, 231);
+  /* margin-left: 4%; */
+  /* margin-right: 4%; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moreComments_text {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* 修改弹窗 */
+.el-dialog {
+  border-radius: 10px;
+}
+/* 文件上传 */
+.upload_box {
+  display: flex;
+  /* align-items: center; */
+}
+.upload_right {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.upload_image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

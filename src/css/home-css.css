@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* 布局样式 */
+.el-header {
+  background-color: #ffffff;
+  line-height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+/* 主要内容的外层盒子 */
+.mainContent {
+  /* width: 100vw; */
+  height: 1142px;
+  background-color: rgb(241, 242, 245);
+  box-sizing: border-box;
+}
+.main_box {
+  width: 100%;
+  height: 1210px;
+  margin-top: 80px;
+  background-color: #f1f2f5;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.primaryDataContent_box {
+  display: flex;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+/* 左侧导航、章列表、热评文章_友情链接的盒子 */
+.primaryDataContent {
+  display: flex;
+  /* position: fixed;
+    z-index: 999;
+    top: 90px; */
+  width: 100%;
+  /* background-color: red; */
+  /* justify-content: center; */
+}

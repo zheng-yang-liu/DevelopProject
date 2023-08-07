@@ -1,0 +1,95 @@
+/* 最外层盒子 */
+.father_box {
+  width: 100%;
+  height: 100vh;
+  /* background-color: blue; */
+  /* 内容水平居中 */
+  display: flex;
+  justify-content: center;
+}
+/* 固定显示的窗口 */
+.publishAnArticleBOX {
+  width: 900px !important;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 745px;
+  /* background-color: red; */
+  margin-left: 2%;
+  box-sizing: border-box;
+  overflow: hidden; /* 将超出盒子内容隐藏 */
+  overflow: scroll; /* 允许内容滚动 */
+}
+.publishAnArticleBOX::-webkit-scrollbar {
+  width: 0; /* 隐藏滚动条的宽度 */
+  height: 0; /* 隐藏滚动条的高度 */
+}
+/* 分割线 */
+.dividingLine {
+  width: 100%;
+  height: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* 添加下方阴影效果 */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* 标题 */
+.enterATitle_box {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  /* background-color: red; */
+}
+.enterATitle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.enterATitle_input {
+  display: flex;
+  justify-content: center;
+  /* background-color: blue; */
+  width: 90%;
+}
+/* 输入正文 */
+.content_box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* background-color: red; */
+}
+.content {
+  width: 90%;
+}
+.selectAnArticleCategory_box {
+  /* background-color: red; */
+  /* height: 200px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.selectAnArticleCategory_box_box {
+  width: 90%;
+  /* background-color: green; */
+  height: 50%;
+}
+.selectAnArticleCategory {
+  display: flex;
+  flex-direction: column;
+}
+.publishButton {
+  margin-left: auto;
+  margin-right: 10px;
+}
+.publishButton_button {
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff5252;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}

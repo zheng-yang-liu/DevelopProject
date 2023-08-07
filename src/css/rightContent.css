@@ -1,0 +1,110 @@
+.rightContent_box {
+  width: 270px;
+  height: 745px;
+  /* background-color: #fff; */
+  margin-left: 1%;
+  margin-right: 10%;
+  box-sizing: border-box;
+  border-radius: 5px;
+} /* 上热评文章 */
+.rightContent_box_above {
+  width: 100%;
+  height: 413px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.rightContent_box_above_above {
+  height: 50px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.rightContent_box_above_above_firstP {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.rightContent_box_above_above span {
+  display: flex;
+  margin-left: auto;
+  margin-right: 5%;
+  align-items: center;
+  font-size: 10px;
+  color: rgb(125, 120, 120);
+}
+.rightContent_box_above_above span:hover {
+  cursor: pointer;
+}
+.rightContent_box_above_above span p {
+  margin-left: 5px;
+  font-size: 10px;
+  color: rgb(125, 120, 120);
+}
+.rightContent_box_under_under span {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.rightContent_box_under_under span:hover {
+  cursor: pointer;
+}
+.firstP {
+  margin-left: 5%;
+  font-size: 16px;
+  width: 170px;
+  /* background-color: red; */
+  /* 设置.firstP中的文字不换行，超出盒子自动隐藏 */
+  white-space: nowrap;
+  overflow: hidden;
+  /* 以...的形式显示产出部分 */
+  text-overflow: ellipsis;
+  color: black;
+}
+.otherP {
+  margin-left: auto;
+  margin-right: 5%;
+  font-size: 10px;
+  color: black;
+}
+.rightContent_box_under_under {
+  margin-top: 10px;
+}
+/* 下友情链接 盒子*/
+.rightContent_box_under {
+  width: 100%;
+  height: 322px;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+/* 友情链接盒子 */
+.links {
+  /* background-color: red; */
+  width: 100%;
+  height: 161px;
+}
+.links_firstP {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 5%;
+}
+/* 链接地址 */
+.address {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-top: 5px;
+}
+/* 链接名字 */
+.links_otherP {
+  line-height: 25px;
+}
+/* 联系电话盒子 */
+.contact {
+  /* background-color: green; */
+  width: 100%;
+  height: 161px;
+}
