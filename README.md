@@ -14,6 +14,15 @@
     database: 'vuedata',
     })
 
+## 安装依赖
+
+```
+根目录  npm i
+API  npm i
+```
+
+
+
 # 项目运行
 
     在 API 文件夹运行 npm run start
