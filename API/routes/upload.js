@@ -1,9 +1,6 @@
 // 上传文件
 var express = require('express')
 var router = express.Router()
-var md5 = require('md5-node')
-//引入MySQL
-var sqlQuery = require('../db/mysql')
 //引入时间模块
 var moment = require('moment')
 var path = require('path')
@@ -31,9 +28,13 @@ router.post('/', async function (req, res, next) {
   // 文件是否保留后缀
   //   form.keepExtensions = true
   // 设置文件上传的临时目录
-  form.uploadDir = path.join(__dirname, '../', 'files')
+  form.uploadDir = path.join(__dirname, '../', 'temp')
   // 解析客户端传递过来的formdata数据
   form.parse(req, (error, fields, files) => {
+    if (error) {
+      console.error('File upload error:', error);
+      return res.json({ code: 100, msg: '文件上传失败', error: error });
+    }
     var image = files.image
     // 现在所在的目录
     var oldpath = image.filepath
@@ -47,6 +48,7 @@ router.post('/', async function (req, res, next) {
 
     // 提取文件后缀名
     const oldFileName = image.originalFilename
+    console.log(oldFileName);
     const fileExtension = oldFileName.split('.').pop()
 
     // 组合文件名==>>存放目录
@@ -60,15 +62,8 @@ router.post('/', async function (req, res, next) {
       }
     })
     // 清空临时文件夹
-    // 删除文件夹下所有文件
-    delFs
-      .emptyDir('../files')
-      .then(() => {
-        console.log('临时文件夹已经被清空！')
-      })
-      .catch((err) => {
-        console.error(err)
-      })
+    // 删除临时文件夹下所有文件
+    delFs.emptyDirSync(path.join(__dirname, '../', 'temp'))
     //返回结果
     return res.json({ code: 200, value: newpath })
   })

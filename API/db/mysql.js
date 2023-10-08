@@ -5,7 +5,7 @@ var mysql = require('mysql')
 var connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'mysql6zy13172',
+  password: '123456',
   database: 'vuedata',
 })
 // 更换同步操作

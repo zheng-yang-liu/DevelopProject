@@ -1,7 +1,7 @@
 .rightContent_box {
   width: 270px;
-  height: 745px;
-  /* background-color: #fff; */
+  height: 830px;
+  background-color: #fff;
   margin-left: 1%;
   margin-right: 10%;
   box-sizing: border-box;
@@ -74,7 +74,7 @@
 /* 下友情链接 盒子*/
 .rightContent_box_under {
   width: 100%;
-  height: 322px;
+  /* height: 100%; */
   background-color: #fff;
   margin-top: 10px;
   border-radius: 5px;
